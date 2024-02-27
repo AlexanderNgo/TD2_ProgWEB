@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#" class = "Metflix">Metflix</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Movies Request</a>
+            <a href="#">Series</a>
+            <a href="#">Criticals</a>
+            
+        </div>
+        <div class = "sign-in">
+            <input type = "text" id = "Rechercher" placeholder="Rechercher...">
+            <img src = "loupe.png" alt = "loupe" onclick = "ActiverLoupe();">
+            <div class="toggle-container">
+                <label class="switch">
+                  <input type="checkbox" id="toggleSwitch">
+                  <span class="slider"></span>
+                </label>
+            </div>
+            <a href = "register.html">Sign In</a>
+        </div>
+    </div>
+    <div>
+        <h1 class = "Titre">Welcome to Alex's TV</h1>
+    </div>
+    <div>
+        <h4 class = "Titre2">Don't waste more time ! See my Top 3 Favourite movies !</h4>
+        <h4 class = "Titre2">Choose the type of movie you like on left or right</h4>
+        <h3 class = "Titre3" id = "type">Kind : Thriller</h3>
+    </div>
+    <div class = "image-container">
+        <div class = "image fleche-g">
+            <img src = "https://cdn-icons-png.flaticon.com/256/54/54321.png" alt = "fleche-g" onclick = "executerFonctions();">
+        </div>
+        <div class = "image image1">
+            <img src = "https://i.ebayimg.com/images/g/3UQAAOSwroxfeYhm/s-l1600.jpg" alt = "img1">
+            <p id = "paragraphe1"><b>FightClub : David Fincher 1999</b></p>
+            <p id = "paragraphe2">"Fight Club" follows an unnamed narrator who creates an underground fight club with Tyler Durden, escalating into Project Mayhem, an anti-establishment movement. The twist reveals Tyler is a manifestation of the narrator's desires. Confronting Tyler, the narrator embraces responsibility. The film ends with societal implications.</p>
+        </div>
+        <div class = "image image1">
+            <img src = "https://m.media-amazon.com/images/I/916VtXkyrHL._AC_UF1000,1000_QL80_.jpg" alt = "img2">
+            <p id = "paragraphe3"><b>Martin Scorsese : 2010</b></p>
+            <p id = "paragraphe4">"Shutter Island" follows U.S. Marshal Teddy Daniels investigating a disappearance at a mental institution. He unravels a web of deceit, experiencing disturbing visions. The twist reveals he's actually an inmate, Andrew Laeddis, suffering delusions to cope with killing his wife. He chooses to live in ignorance, accepting treatment.</p>
+        </div>
+        <div class = "image image1">
+            <img src = "https://fr.web.img6.acsta.net/medias/nmedia/18/62/84/94/18680369.jpg" alt = "img3">
+            <p id = "paragraphe5"><b>The Prestige : Christohper Nolan 2006</b></p>
+            <p id = "paragraphe6">"The Prestige" follows rival magicians Robert Angier and Alfred Borden in a feud of illusions. Borden's "Transported Man" trick baffles Angier, who uses Tesla's machine for his own "real" teleportation. The twist reveals Borden's sacrifice: he has been living as twin brothers. Angier's obsession leads to his death, highlighting the cost of obsession in magic.</p>
+        </div>
+        <div class = "image fleche-d">
+            <img src = "https://icones.pro/wp-content/uploads/2021/06/symbole-fleche-droite-noir.png" alt = "fleche-d" onclick = "executerFonctions();">
+        </div>
+
+    </div>
+    <footer>
+        <div class = "bottom">
+            <div class = "bottom-img">
+                <img src = "facebook.png" alt "FB">
+            </div>
+            <div class = "bottom-img">
+                <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt "Insta">
+            </div>
+            <div class = "bottom-img">
+                <img src = "snapchat.png" alt "Snap">
+            </div>
+            <div class = "bottom-img">
+                <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt "Twitter">
+            </div>
+        </div>
+    </footer>
+    <script src = "index.js"></script>
+</body>
+</html>
