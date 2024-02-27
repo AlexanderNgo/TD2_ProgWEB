@@ -1,0 +1,99 @@
+body
+{
+	//background-color: blue;
+	background-image: url("https://i.redd.it/4k-wallpaper-sports-cars-on-track-v0-9ujw5dx929sa1.jpg?width=3840&format=pjpg&auto=webp&s=6da227a49a303421979ac42f8f9b23d04a44997a");
+	background-repeat : no-repeat;
+	background-size : cover;
+}
+
+.img-container {
+   height: 100%; /* Hauteur du conteneur gauche pour remplir toute la hauteur de la ligne */
+   overflow: hidden; /* Cache le débordement de l'image */
+   position: relative; /* Position relative pour positionner le texte à l'intérieur */
+   width : 50%;
+
+}
+
+.img-container img {
+   width: 100%; /* La largeur de l'image est de 100% du conteneur */
+   height: 100%; /* La hauteur de l'image est de 100% du conteneur */
+   object-fit: cover; /* L'image couvre tout le conteneur tout en conservant ses proportions */
+}
+
+.form-container {
+            position: relative;
+            
+            border-right: 4px solid burlywood; /* Bordure à gauche du formulaire */
+            //background-color: darkorange;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/002/037/924/non_2x/abstract-blue-background-with-beautiful-fluid-shapes-free-vector.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top-right-radius: 250px ;
+            border-bottom-right-radius: 250px ;
+            /*background-image: url("https://imgd.aeplcdn.com/1200x900/n/cw/ec/101093/lamborghini-left-front-three-quarter3.jpeg?isig=0&wm=0");
+            background-size : cover;
+            overflow: hidden;*/
+          
+   			
+        }
+
+
+.container-fluid
+{
+	height : 100vh;
+	padding : 0;
+}
+.gauche {
+            height: 100%; /* Hauteur de la ligne pour remplir toute la hauteur du conteneur */
+            margin : 0;
+        }
+form
+{
+	padding-top: 10px;
+	
+	
+}
+/* Classe personnalisée pour les champs input */
+        .custom-input {
+            width: 87%; /* Réduire la largeur à 80% de la largeur du conteneur parent */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #e0e0e0; /* Remplacez cette couleur par celle de votre choix */
+        }
+.custom-age
+{
+	width: 25%; /* Réduire la largeur à 80% de la largeur du conteneur parent */
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+input[type="text"]
+{
+	background-color: #e0e0e0; 
+}
+.custom-label {
+    color: black; 
+    font-weight :bold;
+    
+}
+p
+{
+	color : red;
+}
+.retour {
+    position: fixed;
+    top: 10px; 
+    right: 50px; 
+}
+
+.tdroite
+{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 4em;
+   color : white;
+   font-size: 40px;
+   opacity: 0.7;
+}
