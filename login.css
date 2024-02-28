@@ -1,0 +1,80 @@
+body 
+{
+    background-image: url("https://www.bhmpics.com/downloads/cinema-background-Wallpapers/3.cinematograph-concept-background-design-with-popcorn-3d-glasses_260559-142.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button
+{
+    border : None;
+    color : white;
+    background-color: #3498db;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #2980b9; /* Couleur bleu clair plus foncée au survol */
+  }
+.Titre
+{
+    display: flex;
+    justify-content: center;
+    color : red;
+    font-size: 35px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 320px; /* Largeur du formulaire */
+    padding: 50px;
+    padding-bottom : 100px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Inclure le padding et le border dans la largeur */
+}
+.form-checkbox
+{
+    display:flex;
+    align-items: center;
+}
+.button button {
+    background-color: #3498db; /* Couleur bleu clair */
+    color: white;
+    padding: 10px 20px; /* Ajoute de l'espace autour du texte */
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px; /* Espacement en haut du bouton */
+  }
+  
+.button button:hover {
+    background-color: #2980b9; /* Couleur bleu clair plus foncée au survol */
+  }
+a{
+    text-decoration: None;
+}

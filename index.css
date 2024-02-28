@@ -1,30 +1,228 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.navbar {
+    background-color: #413e3e;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    margin-left: 60px; 
+    padding-right: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size : 20px;
+}
+
+.nav-links a:hover {
+    background-color: #111;
+}
+.sign-in
+{
+    margin-left : auto;
+    margin-right : 15px;
+}
+.sign-in a
+{
+    
+    text-decoration : None;
+    color : white;
+    padding: 10px;
+    margin-left : 15px;
+    margin-right : 20px;
+    font-size : 20px;
+}
+.sign-in a:hover 
+{
+    background-color : #111;
+}
+
+
+.sign-in {
+    display: flex;
+    align-items: center;
+}
+/* New Partie sur la loupe*/
+.container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Alignement vertical centré */
+  }
+  
+#loupe {
+    cursor: pointer; /* Afficher le curseur comme une main au survol */
+    margin-right: 20px; /* Espacement à droite de l'image */
+  }
+  
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 100%;
+    padding: 5px;
+  }
+  
+#searchInput {
+    width: 190px;
+    padding: 8px;
+    border: none;
+    border-radius: 25px;  
+  }
+  
+#searchInput:focus {
+    outline: none;
+  }
+  
+/*Fin loupe*/
+
+/*Partie sur le toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+.night-mode {
+    background-color: #333;
+    color: white;
+  }
+
+/*Fin toggle switch*/
 .Titre
 {
     color : red;
-    display: flex;
-    justify-content: center;
-    font-size: 80px;
+    padding-right : 80px;
+    font-size: 57px;
     margin-bottom: 10px;
-    /*background-color: blue;*/
+    
 }
 .Titre2
 {
-    font-size: 20px;
-   /*background-color: aliceblue;*/
-    margin-left : 2em;
-    display: flex;
-    justify-content: center;
+    font-size: 18px;
+    padding-right : 80px;
+    margin-left : 1em;
+    margin-top : 10px;
     margin-bottom: 5px; /* Ajuste la marge en bas de chaque titre */
 }
+.TitresEtVideos {
+    text-align: center;
+    border-bottom: 7px solid rgb(114, 112, 112);
+    display: flex;
+    flex-direction: row; /* Aligne les éléments horizontalement */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    justify-content: space-between; /* Espace les éléments de manière égale */
+}
+
+.Top {
+    margin: 40px; /* Espacement entre les images */
+    margin-bottom : 30px;
+}
+
+.Video {
+    width : 35%;
+    height : 290px;
+}
+.Video video
+{
+    width : 100%;
+    height : 100%;
+}
+
+.ThreeFirstTitles {
+    width: 50%;
+    height: auto;
+    padding-right : 50px;
+}
+
+
 .Titre3
 {
     padding-left : 70px;
+    font-size : 27px;
+}
+.Titre4
+{
+    padding-left : 70px;
+    font-size : 22px;
+}
+.logo .Metflix
+{
+    color : red;
+    font-size : 55px;
     
 }
+
 .image-container
 {
     text-align: center;
-    
+    border-bottom: 7px solid rgb(114, 112, 112);
+}
+.image-containerSeries
+{
+    text-align: center;
+    border-bottom: 7px solid rgb(114, 112, 112);
 }
 .image 
 {
@@ -38,9 +236,17 @@
     
     border : 1px solid;
 }
+.image p 
+{
+    font-size: 15px;
+}
+.image1 
+{
+    background-color : rgb(156, 153, 153);
+}
 .image:hover 
 {
-    transform : scale(1.2)
+    transform : scale(1.1)
 }
 img {
     width: 100%;
@@ -70,5 +276,23 @@ img {
     border-top-left-radius: 20px;
     padding-top : 5px;
     margin : 10px;
+    
+}
+.bottom
+{
+    text-align: center;
+    
+    
+}
+.bottom-img
+{
+    display : inline-block;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out; 
+    overflow: hidden; 
+    width: 58px; /* Largeur fixe pour chaque image */
+    height : 70px;
+    margin: 40px; /* Espacement entre les images */
+    cursor : pointer;
     
 }
