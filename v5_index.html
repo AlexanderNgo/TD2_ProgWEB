@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#" class = "Metflix">Metflix</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#series">Series</a>
+            <a href="Rate">Film Rate</a>
+            <a href="#">Donate US</a>
+            <a href="#" id = "genre-link">Genre</a>
+            <a href="#">More</a>
+            
+        </div>
+        <div class = "sign-in">
+            <div class="container">
+                <img src="loupe.png" alt="Rechercher" id="loupe" onclick="toggleSearch()">
+                <div class="search-bar" id="searchBar">
+                  <input type="text" placeholder="Rechercher..." id="searchInput">
+                </div>
+            </div>
+            <div class="toggle-container">
+                <label class="switch">
+                  <input type="checkbox" id="toggleSwitch">
+                  <span class="slider"></span>
+                </label>
+            </div>
+            <a href = "login.html">Sign Up</a>
+        </div>
+    </div>
+    <div class = "TitresEtVideos">
+        <div class = "ThreeFirstTitles Top">
+                <h1 class = "Titre">Welcome to Metflix's TV</h1>
+                <h4 class = "Titre2">Free time to kill and tired of working ? You are definitely in the right spot</h4>
+                <h4 class = "Titre2">Don't waste any more time ! See our favourite movies of the week !</h4>
+                <h4 class = "Titre2">Take a seat and enjoy the movies we have selected for you</h4>
+                
+        </div>
+        <div class = "Video Top">
+            <!--<iframe src="https://www.youtube.com/embed/T33NN_pPeNI?si=ZrKY8jT2q3axFWic&loop=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->   
+            <video controls autoplay loop muted><source src = "131506 (360p).mp4" type = "video/mp4"></source></video>
+        </div>
+    </div>
+    <div id = "movies">
+        <h3 class = "Titre3">Movies</h3>
+        <h3 class = "Titre4" id = "type">Kind : Thriller</h3>
+    </div>
+    <div class = "image-container">
+        <div class = "image fleche-g">
+            <img src = "https://cdn-icons-png.flaticon.com/256/54/54321.png" alt = "fleche-g" onclick = "executerFonctionsLeft();">
+        </div>
+        <div class = "image image1">
+            <img src = "https://i.ebayimg.com/images/g/3UQAAOSwroxfeYhm/s-l1600.jpg" alt = "img1">
+            <p id = "paragraphe1"><b>FightClub : David Fincher 1999</b></p>
+            <p id = "paragraphe2">"Fight Club" follows an unnamed narrator who creates an underground fight club with Tyler Durden, escalating into Project Mayhem, an anti-establishment movement. The twist reveals Tyler is a manifestation of the narrator's desires. Confronting Tyler, the narrator embraces responsibility. The film ends with societal implications.</p>
+        </div>
+        <div class = "image image1">
+            <img src = "https://m.media-amazon.com/images/I/916VtXkyrHL._AC_UF1000,1000_QL80_.jpg" alt = "img2">
+            <p id = "paragraphe3"><b>Martin Scorsese : 2010</b></p>
+            <p id = "paragraphe4">"Shutter Island" follows U.S. Marshal Teddy Daniels investigating a disappearance at a mental institution. He unravels a web of deceit, experiencing disturbing visions. The twist reveals he's actually an inmate, Andrew Laeddis, suffering delusions to cope with killing his wife. He chooses to live in ignorance, accepting treatment.</p>
+        </div>
+        <div class = "image image1">
+            <img src = "https://fr.web.img6.acsta.net/medias/nmedia/18/62/84/94/18680369.jpg" alt = "img3">
+            <p id = "paragraphe5"><b>The Prestige : Christohper Nolan 2006</b></p>
+            <p id = "paragraphe6">"The Prestige" follows rival magicians Robert Angier and Alfred Borden in a feud of illusions. Borden's "Transported Man" trick baffles Angier, who uses Tesla's machine for his own "real" teleportation. The twist reveals Borden's sacrifice: he has been living as twin brothers. Angier's obsession leads to his death, highlighting the cost of obsession in magic.</p>
+        </div>
+        <div class = "image fleche-d">
+            <img src = "https://icones.pro/wp-content/uploads/2021/06/symbole-fleche-droite-noir.png" alt = "fleche-d" onclick = "executerFonctionsRight();">
+        </div>
+
+    </div>
+    <div id = "series">
+        <h3 class = "Titre3">Series</h3>
+        <h3 class = "Titre4" id = "Seriestype">Kind : Thriller</h3>
+    </div>
+    <div class = "image-containerSeries">
+        <div class = "image fleche-g">
+            <img src = "https://cdn-icons-png.flaticon.com/256/54/54321.png" alt = "fleche-g" onclick = "SeriesexecuterFonctionsLeft();">
+        </div>
+        <div class = "image image1">
+            <img src = "Reacher.jpg" alt = "img1">
+            <p id = "Seriesparagraphe1"><b>Reacher : M.J.Bassett 2022</b></p>
+            <p id = "Seriesparagraphe2">The "Jack Reacher" series follows ex-military police officer Jack Reacher, a nomadic drifter and relentless investigator. Each book features Reacher stumbling into dangerous situations, using his wits and combat skills to solve mysteries and deliver justice. The series showcases Reacher's moral code, intelligence, and physical prowess in thrilling and suspenseful plots.</p>
+        </div>
+        <div class = "image image1">
+            <img src = "You.jpg" alt = "img2">
+            <p id = "Seriesparagraphe3"><b>You : 2018-</b></p>
+            <p id = "Seriesparagraphe4">"You" follows bookstore manager Joe Goldberg, who becomes obsessed with women and resorts to extreme measures for love. Season 1 sees his fixation on Guinevere Beck, leading to manipulation and murder. Season 2 with Love Quinn explores his darker tendencies. The series delves into toxic love, identity, and societal commentary.</p>
+        </div>
+        <div class = "image image1">
+            <img src = "GameOfThrones.jpg" alt = "img3">
+            <p id = "Seriesparagraphe5"><b>Game of Thrones : 2011-2019</b></p>
+            <p id = "Seriesparagraphe6">"Game of Thrones" depicts the power struggles among noble families in the fictional continents of Westeros and Essos. Focused on the Iron Throne, key families vie for control amidst supernatural threats and political intrigue. The series culminates in the battle against the White Walkers and the ultimate quest for rulership, revealing unexpected alliances and betrayals.</p>
+        </div>
+        <div class = "image fleche-d">
+            <img src = "https://icones.pro/wp-content/uploads/2021/06/symbole-fleche-droite-noir.png" alt = "fleche-d" onclick = "SeriesexecuterFonctionsRight();">
+        </div>
+
+    </div>
+    <div id = "Rate">
+        <h3 class = "Titre3">Top Ratings</h3>
+        <div class = "avis1">
+            <div class = "userlogo-name">
+                <img src = "userlogo.png" alt = "userlogo">
+                <h3>Shutter Island</h3>
+            </div>
+            <div class = "etoiles">
+                <img src = "etoiles.png" alt = "etoiles">
+            </div>
+            <div class = "avisuser1">
+                <p>"Shutter Island" is a psychological thriller that keeps viewers on the edge of their seats with its gripping storyline and unexpected twists. Directed by Martin Scorsese, the film follows U.S. Marshal Teddy Daniels, played brilliantly by Leonardo DiCaprio, as he investigates the disappearance of a patient from a remote mental institution. From the moment Daniels sets foot on the eerie island, the atmosphere is thick with suspense and mystery.
+
+                    What sets "Shutter Island" apart is its ability to blur the lines between reality and illusion, leaving the audience questioning what is truly happening. The film's haunting visuals and eerie soundtrack enhance this feeling of unease, pulling viewers deeper into the psychological depths of the story.
+                    
+                    As the plot unfolds, secrets are gradually revealed, leading to a shocking and thought-provoking conclusion. Without giving away spoilers, it's safe to say that "Shutter Island" is a film that lingers in the mind long after the credits roll. The performances, particularly DiCaprio's portrayal of a troubled and determined investigator, are top-notch, drawing viewers into the character's unraveling mind.
+                    
+                    Overall, "Shutter Island" is a masterclass in psychological suspense, with Scorsese expertly crafting a film that keeps viewers guessing until the very end. It's a must-watch for fans of thrillers that delve into the darker aspects of the human psyche.
+                </p>
+            </div>
+        </div>
+        <div class = "avis2">
+            <div class = "userlogo-name">
+                <img src = "userlogo.png" alt = "userlogo">
+                <h3>Logan</h3>
+            </div>
+            <div class = "etoiles">
+                <img src = "etoiles.png" alt = "etoiles">
+            </div>
+            <div class = "avisuser1">
+                <p>
+                    "Logan" is a poignant and gritty departure from traditional superhero films, offering a raw and emotional journey into the character of Wolverine. Directed by James Mangold, the film presents an aged and weary Logan, beautifully portrayed by Hugh Jackman, as he grapples with his past and the toll of a lifetime of violence.
+
+Set in a bleak future where mutants are nearly extinct, "Logan" explores themes of mortality, redemption, and the burden of legacy. Jackman's performance is a revelation, showcasing a vulnerable and tormented side of Wolverine that fans had yet to see. His chemistry with the equally impressive Patrick Stewart as an ailing Professor X adds layers of emotion to the story.
+
+What sets "Logan" apart is its willingness to strip away the spectacle and focus on the character-driven narrative. The action sequences are intense and visceral, reflecting Logan's inner turmoil and the brutal world he inhabits. The introduction of Laura, a young mutant with powers similar to Logan's, adds depth to the story and leads to powerful moments of connection and growth.
+
+The film's R-rating allows for a level of realism and grittiness that was previously unseen in Wolverine's cinematic outings. It doesn't hold back on the violence or the emotional impact of Logan's journey. The result is a film that transcends the superhero genre, standing as a powerful and moving piece of cinema.
+
+"Logan" is a fitting and emotional farewell to Hugh Jackman's iconic portrayal of Wolverine, offering a mature and thought-provoking exploration of a beloved character. It's a testament to the potential of superhero films to be more than just action-packed spectacles, delivering a deeply human story that stays with viewers long after the credits roll.
+                </p>
+            </div>
+        </div>
+        <div class = "avis2">
+            <div class = "userlogo-name">
+                <img src = "userlogo.png" alt = "userlogo">
+                <h3>Reacher</h3>
+            </div>
+            <div class = "etoiles">
+                <img src = "etoiles.png" alt = "etoiles">
+            </div>
+            <div class = "avisuser1">
+                <p>The "Jack Reacher" series brings Lee Child's iconic character to life in a thrilling and action-packed adaptation. Starring Alan Ritchson as the titular character, the series follows the former military police officer as he travels from town to town, righting wrongs and seeking justice for the underdogs.
+
+                    What sets "Jack Reacher" apart is its dedication to capturing the essence of the character from the books. Ritchson embodies Reacher's stoic and relentless nature, delivering bone-crunching action scenes and sharp-witted one-liners. The series stays true to the source material's focus on Reacher's investigative skills, his sense of morality, and his knack for getting into and out of trouble.
+                    
+                    Each episode presents a new mystery or conflict for Reacher to tackle, often involving corrupt officials, criminal organizations, and small-town secrets. The series balances intense action sequences with moments of introspection, allowing viewers to delve into Reacher's complex psyche and moral compass.
+                    
+                    Supporting characters, such as Roscoe Conklin (played by Willa Fitzgerald) and Major Susan Turner (played by Maria Sten), add depth and intrigue to the storyline, creating a rich tapestry of personalities and motivations.
+                    
+                    Overall, "Jack Reacher" is a thrilling and satisfying adaptation that will please fans of the books while also drawing in new audiences. It's a gritty and engaging series that keeps viewers on the edge of their seats, eagerly awaiting Reacher's next move as he navigates the dangerous and morally ambiguous world around him.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class = "bottom bottom-couleur">
+            <div class = "bloc-gauche">
+                <div class = "bottomTitre">
+                    <h1>Metflix</h1>
+                </div>
+                <div class = "bloc-deux">
+                    <div class = "vertical-un">
+                        <a href = "#"><p>Team</p></a>
+                        <a href = "#"><p>Services</p></a>
+                        <a href = "#"><p>Employers</p></a>
+                    </div>
+                    <div class = "vertical-deux">
+                        <a href = "#"><p>Contact Us</p></a>
+                        <a href = "#"><p>Political privacy</p></a>
+                        <a href = "#"><p>Other</p></a>
+                    </div>
+                    <div class = "vertical-trois">
+                        <a href = "#"><p>Free trial</p></a>
+                        <a href = "#"><p>ChromeCast TV</p></a>
+                        <a href = "#"><p>Sharing account</p></a>
+                    </div>
+                    <div class = "vertical-quatre">
+                        <a href = "#"><p>Advertising</p></a>
+                        <a href = "#"><p>Speed Test</p></a>
+                        <a href = "#"><p>Press</p></a>
+                    </div>
+                </div>
+        
+                <div class = "bottom-img">
+                    <img src = "facebook.png" alt "FB">
+                </div>
+                <div class = "bottom-img">
+                    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt "Insta">
+                </div>
+                <div class = "bottom-img">
+                    <img src = "snapchat.png" alt "Snap">
+                </div>
+                <div class = "bottom-img">
+                    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt "Twitter">
+                </div>
+            </div> 
+            <div class = "bloc-droit">
+                <p>Get access to the newsletter</p>
+                <div class = "field-mail">
+                    <label for = "mail"><b>Subscribe</b></label>
+                    <input type = "text" name = "mail" placeholder="Your Email here">
+                </div>
+                <div class = "checkbox-field">
+                    <input type = "checkbox" name = "boite">
+                    <label for = "boite">By checking the box your agree to receive our newsletter</label>
+                </div>
+            </div>  
+        </div>
+    </footer>
+    <script src = "index.js"></script>
+</body>
+</html>
