@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.navbar {
+    background-color: #413e3e;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    margin-left: 60px; 
+    padding-right: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size : 20px;
+}
+
+.nav-links a:hover {
+    background-color: #111;
+}
+
+.sign-in
+{
+    margin-left : auto;
+    margin-right : 15px;
+}
+.sign-in a
+{
+    
+    text-decoration : None;
+    color : white;
+    padding: 10px;
+    margin-left : 15px;
+    margin-right : 20px;
+    font-size : 20px;
+}
+.sign-in a:hover 
+{
+    background-color : #111;
+}
+
+
+.sign-in {
+    display: flex;
+    align-items: center;
+}
+/* New Partie sur la loupe*/
+.container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Alignement vertical centré */
+  }
+  
+#loupe {
+    cursor: pointer; /* Afficher le curseur comme une main au survol */
+    margin-right: 20px; /* Espacement à droite de l'image */
+  }
+  
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 100%;
+    padding: 5px;
+  }
+  
+#searchInput {
+    width: 190px;
+    padding: 8px;
+    border: none;
+    border-radius: 25px;  
+  }
+  
+#searchInput:focus {
+    outline: none;
+  }
+  
+/*Fin loupe*/
+
+/*Partie sur le toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+.night-mode {
+    background-color: #333;
+    color: white;
+  }
+
+/*Fin toggle switch*/
+.Titre
+{
+    color : red;
+    padding-right : 80px;
+    font-size: 67px;
+    margin-bottom: 10px;
+    
+}
+.Titre2
+{
+    font-size: 18px;
+    padding-right : 80px;
+    margin-left : 1em;
+    margin-top : 10px;
+    margin-bottom: 5px; /* Ajuste la marge en bas de chaque titre */
+}
+.TitresEtVideos {
+    text-align: center;
+    border-bottom: 7px solid rgb(114, 112, 112);
+    display: flex;
+    flex-direction: row; /* Aligne les éléments horizontalement */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    justify-content: space-between; /* Espace les éléments de manière égale */
+    background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Top h4
+{
+    color : white;
+}
+
+.Top {
+    margin: 40px; /* Espacement entre les images */
+    margin-bottom : 30px;
+}
+
+.Video {
+    width : 38%;
+    height : 300px;
+    
+}
+.Video video
+{
+    width : 100%;
+    height : 100%;
+    
+}
+
+.ThreeFirstTitles {
+    width: 50%;
+    height: 50%;
+    padding-right : 50px;
+}
+
+
+.Titre3
+{
+    padding-left : 70px;
+    font-size : 27px;
+}
+.Titre4
+{
+    padding-left : 70px;
+    font-size : 22px;
+}
+.logo .Metflix
+{
+    color : red;
+    font-size : 55px;
+    
+}
+
+.image-container
+{
+    text-align: center;
+    border-bottom: 7px solid rgb(114, 112, 112);
+}
+.image-containerSeries
+{
+    text-align: center;
+    border-bottom: 7px solid rgb(114, 112, 112);
+}
+.image 
+{
+    display : inline-block;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out; 
+    overflow: hidden; 
+    width: 415px; /* Largeur fixe pour chaque image */
+    height : 650px;
+    margin: 40px; /* Espacement entre les images */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border : 1px solid;
+}
+.image p 
+{
+    font-size: 15px;
+}
+.image1 
+{
+    background-color : rgb(156, 153, 153);
+}
+.image:hover 
+{
+    transform : scale(1.1)
+}
+img {
+    width: 100%;
+    height: 73%;
+    object-fit: cover; /* L'image s'adapte sans déformer, en coupant si nécessaire */
+}
+.fleche-d
+{
+    width : 45px;
+    height : 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+    margin-left : 40px;
+    padding-top : 5px;
+    margin : 10px;
+    
+}
+.fleche-g
+{
+    width : 45px;
+    height : 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-top : 5px;
+    margin : 10px;
+    
+}
+.avis1
+{
+   
+    margin-left : 70px;
+    margin-right : 50px;
+    background-color: rgba(177, 163, 233, 0.218);
+}
+.userlogo-name
+{
+    display : flex;
+    align-items: center;
+}
+.userlogo-name img
+{
+    height : 60px;
+    width : 60px;
+}
+.etoiles
+{
+    width : 170px;
+    margin-left : 53px;
+    padding-bottom : 5px;
+    display : flex;
+}
+.etoiles img
+{
+    height : 25px;
+    width : 100%;
+    
+    align-items: flex-start;
+   
+}
+.avisuser1
+{
+    border-top : 1px solid;
+    overflow : hidden;
+}
+.avisuser1 p 
+{
+    text-align: justify;
+    padding-left : 15px;
+    padding-right : 15px;
+}
+
+.avis2
+{
+    margin-top : 15px;
+    margin-left : 70px;
+    margin-right : 50px;
+    background-color: rgba(177, 163, 233, 0.218);
+}
+.bloc-gauche 
+{
+    margin-left : 70px;
+}
+.bottomTitre
+{
+    color : red;
+    font-size: 20px;
+    margin-left : 59px;
+}
+.bottom
+{
+    background-image : url("https://cdn5.vectorstock.com/i/1000x1000/89/79/abstract-dark-blue-background-vector-13428979.jpg");
+    background-repeat : no-repeat;
+    background-size: cover;
+    border-top : 1px solid;
+    margin-top : 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bloc-deux
+{
+    display: flex;
+    align-items: center;
+    margin-left : 59px;
+}
+.vertical-un, .vertical-deux,.vertical-trois
+{
+    margin-right : 60px;
+}
+
+.vertical-un a,.vertical-deux a, .vertical-trois a, .vertical-quatre a
+{
+    text-decoration: none;
+    color : white;
+}
+.bottom-img
+{
+    display : inline-block;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out; 
+    overflow: hidden; 
+    width: 58px; 
+    height : 70px;
+    margin-top : 35px;
+    margin-left: 60px; 
+    cursor : pointer;
+}
+.bloc-droit
+{
+   
+    margin-right : 100px;
+}
+.bloc-droit p
+{
+    font-size : 20px;
+    color : white;
+}
+.field-mail
+{
+    border : 2px solid white;
+}
+.field-mail label
+{
+    color : white;
+}
+.checkbox-field 
+{
+    margin-top : 10px;
+}
+.checkbox-field label
+{
+    color : white;
+}
+.checkbox-field input[type = "checkbox"]
+{
+    width : 20px;
+    height : 20px;
+}
+.field-mail input[type = "text"]
+{
+    width : 370px;
+    height : 50px;
+    border-right: 1;
+}
